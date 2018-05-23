@@ -3,17 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.heroku.web.controller;
+package com.heroku.web.controller.admin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+/**
+ *
+ * @author USER
+ */
 @Controller
-@RequestMapping(value = "/home")
-public class DefaultController{
+@RequestMapping(value = "/admin/dashboard")
+public class DashboardController{
+    
     @RequestMapping(method = RequestMethod.GET)
     public String index(){
-        return "index";
+        return "admin/dashboard/index";
     }
 }
